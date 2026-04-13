@@ -1,4 +1,124 @@
-django_server.txt
+theia@theia-iksalimov:/home/project$ cd xrwvm-fullstacxrwvm-fullstack_developer_capstone
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_developer_capstone$ cd server
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_developer_capstone/server$ pip install virtualenv
+Defaulting to user installation because normal site-packages is not writeable
+Collecting virtualenv
+  Downloading virtualenv-21.2.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv)
+  Downloading distlib-0.4.0-py2.py3-none-any.whl.metadata (5.2 kB)
+Collecting filelock<4,>=3.24.2 (from virtualenv)
+  Downloading filelock-3.25.2-py3-none-any.whl.metadata (2.0 kB)
+Requirement already satisfied: platformdirs<5,>=3.9.1 in /usr/local/lib/python3.11/dist-packages (from virtualenv) (4.9.4)
+Collecting python-discovery>=1 (from virtualenv)
+  Downloading python_discovery-1.2.2-py3-none-any.whl.metadata (5.4 kB)
+Downloading virtualenv-21.2.1-py3-none-any.whl (5.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0.0/5.8 MB
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 133.8 MB/s  0:00:00
+Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+Downloading filelock-3.25.2-py3-none-any.whl (26 kB)
+Downloading python_discovery-1.2.2-py3-none-any.whl (31 kB)
+Installing collected packages: distlib, filelock, python-discovery, virtualenv
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━ 3/4 [virtu
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4 [virtu
+Successfully installed distlib-0.4.0 filelock-3.25.2 python-discovery-1.2.2 virtualenv-21.2.1
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_developer_capstone/server$ pip install virtualenv
+virtualenv djangoenv
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: virtualenv in /home/theia/.local/lib/python3.11/site-packages (21.2.1)
+Requirement already satisfied: distlib<1,>=0.3.7 in /home/theia/.local/lib/python3.11/site-packages (from virtualenv) (0.4.0)
+Requirement already satisfied: filelock<4,>=3.24.2 in /home/theia/.local/lib/python3.11/site-packages (from virtualenv) (3.25.2)
+Requirement already satisfied: platformdirs<5,>=3.9.1 in /usr/local/lib/python3.11/dist-packages (from virtualenv) (4.9.4)
+Requirement already satisfied: python-discovery>=1 in /home/theia/.local/lib/python3.11/site-packages (from virtualenv) (1.2.2)
+created virtual environment CPython3.11.15.final.0-64-x86_64 in 961ms
+  creator CPython3Posix(dest=/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, via=copy, app_data_dir=/home/theia/.cache/virtualenv)
+    added seed packages: pip==26.0.1, setuptools==82.0.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_developer_capstone/server$ 
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_developer_capstone/server
+$ 
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_detheia@theia-iksalimov:/home/project/xrwvm-fullstack_de
+theia@theia-iksalimov:/home/project/xrwvm-fullstack_detheia@theia-iksalimov:/home/project/xrwvm-fullstack_developer_capstone/server
+$ source djangoenv/bin/activate
+(djangoenv) theia@theia-iksalimov:/home/project/xrwvm-fullstack_develo
+per_capstone/server$ python3 -m pip install -U -r requper_capstone/server$ python3 -m pip install -U -r requirements.txt
+Collecting requests (from -r requirements.txt (line 1))
+  Downloading requests-2.33.1-py3-none-any.whl.metadata (4.8 kB)
+Collecting Django (from -r requirements.txt (line 2))
+  Downloading django-5.2.13-py3-none-any.whl.metadata (4.1 kB)
+Collecting Pillow (from -r requirements.txt (line 3))
+  Downloading pillow-12.2.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting gunicorn (from -r requirements.txt (line 4))
+  Downloading gunicorn-25.3.0-py3-none-any.whl.metadata (5.5 kB)
+Collecting python-dotenv (from -r requirements.txt (line 5))
+  Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 1))
+  Downloading charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 1))
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 1))
+  Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2023.5.7 (from requests->-r requirements.txt (line 1))
+  Downloading certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+Collecting asgiref>=3.8.1 (from Django->-r requirements.txt (line 2))
+  Downloading asgiref-3.11.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from Django->-r requirements.txt (line 2))
+  Downloading sqlparse-0.5.5-py3-none-any.whl.metadata (4.7 kB)
+Collecting packaging (from gunicorn->-r requirements.txt (line 4))
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading requests-2.33.1-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (214 kB)
+Downloading idna-3.11-py3-none-any.whl (71 kB)
+Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading django-5.2.13-py3-none-any.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0.0/8.3 MB
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 55.3 MB/s  0:00:00
+Downloading pillow-12.2.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0.0/7.1 MB
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 142.2 MB/s  0:00:00
+Downloading gunicorn-25.3.0-py3-none-any.whl (208 kB)
+Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+Downloading asgiref-3.11.1-py3-none-any.whl (24 kB)
+Downloading certifi-2026.2.25-py3-none-any.whl (153 kB)
+Downloading sqlparse-0.5.5-py3-none-any.whl (46 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+Installing collected packages: urllib3, sqlparse, python-dotenv, Pillow, packaging, idna, charset_normalizer, certifi, asgiref, requests, gunicorn, Django
+   ━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  2/12 [pyt
+   ━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  3/12 [Pil
+   ━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  3/12 [Pil
+   ━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━  5/12 [idn
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━ 10/12 [gun
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ 11/12 [Dja
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12/12 [Dja
+Successfully installed Django-5.2.13 Pillow-12.2.0 asgiref-3.11.1 certifi-2026.2.25 charset_normalizer-3.4.7 gunicorn-25.3.0 idna-3.11 packaging-26.0 python-dotenv-1.2.2 requests-2.33.1 sqlparse-0.5.5 urllib3-2.6.3
+(djangoenv) theia@theia-iksalimov:/home/project/xrwvm-(djangoenv) theia@theia-iksalimov:/home/project/xrwvm-(djangoenv) theia@theia-iksalimov:/home/project/xrwvm-fullstack_develo
+per_capstone/server$ python3 manage.py makemigrati
+ons
+No changes detected
+(djangoenv) theia@theia-iksalimov:/home/project/xrwvm-fullst
+ack_developer_capstone/server$ python3 manage.py migraack_developer_capstone/server$ python3 manage.py migrate
+Operations to perform:
   Apply all migrations: admin, auth, contenttypes, sessions
 Running migrations:
   Applying contenttypes.0001_initial... OK
@@ -52,3 +172,9 @@ April 13, 2026 - 17:45:44
 Django version 5.2.13, using settings 'djangoproj.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
