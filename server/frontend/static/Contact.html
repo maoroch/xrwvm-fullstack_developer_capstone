@@ -3,11 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>Contact Us | Best Cars Dealership</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .contact-icon {
+            font-size: 1.8rem;
+            margin-right: 12px;
+            color: darkturquoise;
+        }
+        .contact-detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 0.8rem;
+        }
+        .contact-detail-item:last-child {
+            border-bottom: none;
+        }
+        .contact-info-block {
+            background-color: #f8f9fa;
+            border-radius: 1rem;
+            padding: 1.8rem;
+            height: 100%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .map-placeholder {
+            background-color: #dee2e6;
+            height: 240px;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #495057;
+            font-weight: 500;
+            margin-top: 1rem;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%236c757d" width="48px" height="48px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center 40%;
+            background-size: 56px;
+            padding-top: 60px;
+        }
+        .map-placeholder span {
+            background: rgba(255,255,255,0.8);
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+        }
+        .form-label {
+            font-weight: 500;
+        }
+        .btn-submit {
+            background-color: darkturquoise;
+            border: none;
+            padding: 8px 28px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .btn-submit:hover {
+            background-color: #00a5b5;
+            transform: scale(1.02);
+        }
+        .card-contact-main {
+            border: none;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .hours-badge {
+            background-color: #e9ecef;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+    </style>
 </head>
-<body>
+<body onload="checkSession()">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+          <h2 style="padding-right: 5%;">Dealerships</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-5">
+            <div class="contact-info-block">
+                <h3 class="mb-4" style="color: #1e2a3a;">📬 Get in touch</h3>
+                
+                <div class="contact-detail-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <strong>Main Showroom</strong><br>
+                        123 Auto Boulevard,<br>
+                        Detroit, MI 48201, USA
+                    </div>
+                </div>
+                
+                <div class="contact-detail-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <strong>Phone</strong><br>
+                        +1 (800) 555-CARS (2277)<br>
+                        Mon–Fri: 9am – 7pm
+                    </div>
+                </div>
+                
+                <div class="contact-detail-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:support@bestcarsdealership.com" class="text-decoration-none" style="color: darkturquoise;">support@bestcarsdealership.com</a><br>
+                        <span style="font-size: 0.85rem;">sales@bestcarsdealership.com</span>
+                    </div>
+                </div>
+                
+                <div class="contact-detail-item">
+                    <div class="contact-icon">🕒</div>
+                    <div>
+                        <strong>Opening Hours</strong><br>
+                        Monday – Friday: 9:00 AM – 7:00 PM<br>
+                        Saturday: 10:00 AM – 5:00 PM<br>
+                        Sunday: Closed
+                    </div>
+                </div>
+                
+                <div class="mt-4 pt-2">
+                    <span class="hours-badge">🏆 24/7 Online Support</span>
+                    <span class="hours-badge ms-2">🚗 Test drive by appointment</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-7">
+            <div class="card card-contact-main">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3">Send us a message</h4>
+                    <p class="text-muted mb-4">Questions about inventory, financing, or service? We'll reply within 24h.</p>
+                    
+                    <form id="quickContactForm" onsubmit="return handleContactSubmit(event)">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Full name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="John Carter" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" placeholder="Test drive inquiry / Pricing question">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="3" placeholder="I'm interested in..."></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="submit" class="btn btn-submit" style="background-color: darkturquoise; color: #1e2a3a;">Send message</button>
+                            <small class="text-muted">✉️ We value your privacy</small>
+                        </div>
+                    </form>
+                    
+                    <div class="map-placeholder mt-4">
+                        <span>📍 Main location — Detroit, MI</span>
+                    </div>
+                    <p class="text-muted mt-2 small text-center">Visit our flagship dealership, free parking & refreshments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <p class="text-muted small">📌 Also find us in Chicago, Toronto, and New York — call ahead for appointments.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
